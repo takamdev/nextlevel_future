@@ -1,0 +1,112 @@
+
+/* è‹¹æ–¹-ç®€ å¸¸è§„ä½“
+ã€€ã€€font-family: PingFangSC-Regular, sans-serif;
+ã€€ã€€è‹¹æ–¹-ç®€ æžç»†ä½“
+ã€€ã€€font-family: PingFangSC-Ultralight, sans-serif;
+ã€€ã€€è‹¹æ–¹-ç®€ ç»†ä½“
+ã€€ã€€font-family: PingFangSC-Light, sans-serif;
+ã€€ã€€è‹¹æ–¹-ç®€ çº¤ç»†ä½“
+ã€€ã€€font-family: PingFangSC-Thin, sans-serif;
+ã€€ã€€è‹¹æ–¹-ç®€ ä¸­é»‘ä½“
+ã€€ã€€font-family: PingFangSC-Medium, sans-serif;
+ã€€ã€€è‹¹æ–¹-ç®€ ä¸­ç²—ä½“
+ã€€ã€€font-family: PingFangSC-Semibold, sans-serif; */
+
+@font-face {
+    font-family: 'PingFangSC-Semibold';
+    src: url('PingFangSC-Semibold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PingFangSC-Medium';
+    src: url('PingFangSC-Medium.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PingFangSC-Light';
+    src: url('PingFangSC-Light.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PingFangSC';
+    src: url('PingFangSC.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('Gilroy.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GilroySC';
+    src: url('GilroySC.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gilroy-Bold';
+    src: url('Gilroy-Bold.otf');
+}
+html {
+    min-height: 100vh;
+    max-width: 750px;
+    padding: 0;
+    margin: 0 auto;
+    font-size: 16px;
+    background-color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+ul,li{
+    list-style: none;
+}
+
+.tabbar {
+    height: 4.75rem;
+    max-width: 750px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #1B232A;
+    box-sizing: border-box;
+    padding: 1rem 0;
+}
+
+.tabbar li {
+    width: 25%;
+    float: left;
+    color: #7B8A7D;
+    font-size: .75rem;
+    text-align: center;
+    /* padding-top: 2rem; */
+}
+.tabbar li a{
+    color: #7B8A7D;
+}
+.tabbar li a .active{
+    color:#5ED5A8;
+}
+/* .tabbar li:first-child{
+    background: url('../img/home_a.png') no-repeat top center;
+    background-size: 1.5rem;
+} */
+.tabbar li img{
+    width: 1.5rem;
+}

